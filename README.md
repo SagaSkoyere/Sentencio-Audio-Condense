@@ -42,4 +42,4 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 ---
 
 ## Contact Me
-- I am not regularly checking GitHub, but if you want to make any updates, ping me (Saga) on [Discord](https://discord.gg/85zc78aHwy).
+- I am not regularly checking GitHub, but if you want to make any updates or get in touch, ping me (Saga) on [Discord](https://discord.gg/85zc78aHwy).
