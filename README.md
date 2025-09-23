@@ -5,7 +5,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 ---
 
 ## Features
-- :microphone: **Neural voice detection** (Silero VAD) for accurate speech vs. non-speech trimming.  
+- :brain: **Neural voice detection** (Silero VAD) for accurate speech vs. non-speech trimming with no user input or subtitle alignment.
 - :scissors: Keeps only speech **+1 sec buffer** on either side for natural flow.  
 - :open_file_folder: **Bulk process entire folders** of audio/video files at once with a single command.
 - :arrows_counterclockwise: Extracts audio from common formats (`.wav`, `.mp3`, `.mp4`, `.m4a`, `.mov`, `.mkv`, etc.) via `ffmpeg`.  
