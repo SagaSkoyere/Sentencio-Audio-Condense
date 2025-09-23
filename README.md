@@ -19,7 +19,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 
 ## Run Instructions
 1. Run the `.exe` in the folder you unzipped above whenever you want to bulk process files.
-2. Specify the __folder__ containing your input file(s) and the __folder__ you want your output files to be sent. Note, both need to be a folder filepath rather than pointing it at a file.
+2. Specify the folder containing your input file(s) and the folder you want your output files to be sent. Note, both need to be a folder filepath rather than pointing it at a single audio/video file.
 3. Sit back and relax. In my testing, a 20-minute video clip takes around 30 seconds to process. The program will update you as it completes each file and present a final message when done parsing the full folder. 
 
 ---
