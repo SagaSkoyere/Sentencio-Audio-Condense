@@ -35,8 +35,8 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 ## Potential Improvements
 - Support output formats beyond `.wav`.  
 - Explore masking --> trimmed output for higher audio quality.  
-- User-defined settings: buffer duration (default 1s), speech threshold probability override.  
-- Option to trim intros/outros of a hardcoded duration (intros/outros).
+- User-defined settings: buffer duration (default 1s) & speech threshold probability override.  
+- Option to trim beginning and ending of each file by a hardcoded duration (intro/outro songs).
 - Gracefully handle pointing at a single file (instead of a folder).
 
 ---
