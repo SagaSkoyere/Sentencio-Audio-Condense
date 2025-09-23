@@ -6,7 +6,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 
 ## Features
 - :brain: **Neural voice detection** (Silero VAD) for accurate speech vs. non-speech trimming with no user input or subtitle alignment.
-- :scissors: Keeps only speech **+1 sec buffer** on either side for natural flow.  
+- :scissors: Trims down to **only speech +1 sec buffer** on either side to preserve sentence flow and dialogue pace.
 - :open_file_folder: **Bulk process entire folders** of audio/video files at once with a single command.
 - :arrows_counterclockwise: Extracts audio from common formats (`.wav`, `.mp3`, `.mp4`, `.m4a`, `.mov`, `.mkv`, etc.) via `ffmpeg`.  
 - :computer: Works fully offline — no internet connection, API keys, or fiddling with lining up subtitle tracks. Will always be free to use and open-source.
