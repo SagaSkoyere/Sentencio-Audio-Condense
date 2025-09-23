@@ -5,7 +5,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 ---
 
 ## Features
-- :brain: **Neural voice detection** (Silero VAD) for highly accurate accurate speech vs. non-speech identification.
+- :brain: **Neural voice detection** (via Silero VAD) for highly accurate accurate speech vs. non-speech identification.
 - :scissors: Trims down to **only speech +1 sec buffer** on either side to preserve sentence flow and dialogue pace.
 - :open_file_folder: **Bulk process entire folders** of audio/video files at once with a single command.
 - :arrows_counterclockwise: Extracts audio from common formats (`.wav`, `.mp3`, `.mp4`, `.m4a`, `.mov`, `.mkv`, etc.) via `ffmpeg`.  
@@ -25,7 +25,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 ---
 
 ## How It Works
-1. The Silero VAD neural model assigns a speech probability to each ~32 ms chunk. [Read more on this model](https://github.com/snakers4/silero-vad)
+1. The Silero VAD neural model assigns a speech probability to each ~32 ms chunk. [Read more on this model here](https://github.com/snakers4/silero-vad).
 2. Chunks above the threshold (0.65) are marked as containing speech.  
 3. A two-pass sweep adds a 1-second buffer before and after each identified speech chunk to preserve natural pacing of speech.
 4. These remaining chunks are stitched into the final condensed audio output file.
