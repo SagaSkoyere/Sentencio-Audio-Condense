@@ -28,7 +28,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 1. The Silero VAD neural model assigns a speech probability to each ~32 ms chunk. [Read more on this model here](https://github.com/snakers4/silero-vad).
 2. Chunks above the threshold (0.65) are marked as containing speech.  
 3. A two-pass sweep adds a 1-second buffer before and after each identified speech chunk to preserve natural pacing of speech.
-4. These remaining chunks are stitched into the final condensed audio output file.
+4. These remaining chunks are then exported into the final condensed/trimmed audio output file.
 
 ---
 
