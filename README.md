@@ -32,7 +32,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 
 ---
 
-## Future Plans
+## Potential Improvements
 - Support output formats beyond `.wav`.  
 - Explore masking --> trimmed output for higher audio quality.  
 - User-defined settings: buffer duration (default 1s), speech threshold probability override.  
