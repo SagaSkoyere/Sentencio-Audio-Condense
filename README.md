@@ -6,7 +6,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 
 ## Features
 - :brain: **Neural voice detection** (via Silero VAD) for highly accurate accurate speech vs. non-speech identification.
-- :scissors: Trims down to **only speech +1 sec buffer** on either side to preserve sentence flow and dialogue pace.
+- :scissors: Trims down to **only sppeech plus a brief buffer** on either side of detected speech to preserve sentence flow and dialogue pace.
 - :open_file_folder: **Bulk process entire folders** of audio/video files at once with a single command.
 - :arrows_counterclockwise: Extracts audio from common formats (`.wav`, `.mp3`, `.mp4`, `.m4a`, `.mov`, `.mkv`, etc.) via `ffmpeg`.  
 - :computer: Works fully offline — no internet connection, API keys, or fiddling with lining up subtitle tracks. Will always be free to use and open-source.
@@ -20,14 +20,14 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 ## Run Instructions
 1. Run the `.exe` in the folder you unzipped above whenever you want to bulk process files.
 2. Specify the folder containing your input file(s) and the folder you want your output files to be sent. Note, both need to be a folder filepath rather than pointing it at a single audio/video file.
-3. Sit back and relax. In my testing, a 20-minute video clip takes around 30 seconds to process on a budget laptop. The program will update you as it completes each file and present a final message when done parsing the full folder. 
+3. Sit back and relax. In my testing, a 20-minute video clip takes around 10 seconds to process on a budget laptop. The program will update you as it completes each file and present a final message when done parsing the full folder. 
 
 ---
 
 ## How It Works
-1. The Silero VAD neural model assigns a speech probability to each ~32 ms chunk. [Read more on this model here](https://github.com/snakers4/silero-vad).
-2. Chunks above the threshold (0.65) are marked as containing speech.  
-3. A two-pass sweep adds a 1-second buffer before and after each identified speech chunk to preserve natural pacing of speech.
+1. The Silero VAD neural model assigns a speech probability to each chunk of audio. [Read more on this model here](https://github.com/snakers4/silero-vad).
+2. Chunks above a probability threshold are marked by the voice-detection as containing speech.  
+3. A two-pass sweep adds a 2-second buffer before and after each identified speech chunk to preserve natural pacing of spoken dialogue.
 4. These remaining chunks are then exported into the final condensed/trimmed audio output file.
 
 ---
@@ -35,8 +35,8 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 ## Potential Improvements
 - Support output formats beyond `.wav`.  
 - Explore masking --> trimmed output for higher audio quality.  
-- User-defined settings: buffer duration (default 1s) & speech threshold probability override.  
-- Option to trim beginning and ending of each file by a hardcoded duration (intro/outro songs).
+- User-defined settings: buffer duration & speech threshold probability override.  
+- Option to always trim beginning and ending of each file by a hardcoded duration (intro/outro songs).
 - Gracefully handle pointing at a single file (instead of a folder).
 
 ---
