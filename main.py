@@ -8,7 +8,7 @@ Executable-friendly Silero VAD condenser (Option B: official utils).
     * load_silero_vad (TorchScript JIT model)
     * get_speech_timestamps
     * collect_chunks
-- Applies a ±1 s pad to final merged speech segments.
+- Applies a ±2 s pad to final merged speech segments.
 - Extracts audio from any media via ffmpeg, resampled to mono/16k PCM.
 """
 
@@ -222,11 +222,11 @@ def condense_audio(
         min_speech_duration_ms=min_speech_ms,
         min_silence_duration_ms=min_silence_ms,
         window_size_samples=window_size_samples,
-        speech_pad_ms=0,            # disable internal pad; we add ±1s ourselves
+        speech_pad_ms=0,            # disable internal pad; we add ±2s ourselves
         return_seconds=False,
     )
 
-    # Apply ±1 s padding and merge overlaps
+    # Apply ±2 s padding and merge overlaps
     total_samples = len(audio)
     pad = int(pre_post_ms * 16)  # 1 ms at 16 kHz = 16 samples
     segs = []
