@@ -24,6 +24,11 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 
 ---
 
+## Contact Me (if needed)
+- I am not regularly checking GitHub, but if you want to make any updates or get in touch, ping me (Saga) on [Discord](https://discord.gg/85zc78aHwy).
+
+---
+
 ## How It Works
 1. The Silero VAD neural model assigns a speech probability to each chunk of audio. [Read more on this model here](https://github.com/snakers4/silero-vad).
 2. Chunks above a probability threshold are marked by the voice-detection as containing speech.  
@@ -39,7 +44,3 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Origi
 - Option to always trim beginning and ending of each file by a hardcoded duration (intro/outro songs).
 - Gracefully handle pointing at a single file (instead of a folder).
 
----
-
-## Contact Me
-- I am not regularly checking GitHub, but if you want to make any updates or get in touch, ping me (Saga) on [Discord](https://discord.gg/85zc78aHwy).
