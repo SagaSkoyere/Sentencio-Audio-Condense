@@ -1,0 +1,59 @@
+Most users shouldn't need this. Simply download the zip under releases and run the .exe -- this is for future release rebuilds.
+
+SentencioAudioCondense — Setup & .exe Rebuild Guide (Windows)
+=====================================================
+
+1. Open PowerShell and go to project folder
+-------------------------------------------
+cd "C:\Users\USERHERE\FILEPATH\Desktop\SentencioAudioCondense"
+
+2. Create virtual environment
+-----------------------------
+python -m venv venv
+
+3. Activate environment
+-----------------------
+.\venv\Scripts\activate
+
+If blocked: 
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+4. Upgrade pip safely
+---------------------
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip
+
+5. Install dependencies
+-----------------------
+pip install torch silero-vad pyinstaller numpy
+
+6. Verify install
+-----------------
+python -c "import torch, silero_vad; print('OK')"
+
+7. Test the script (confirm works)
+------------------
+python main.py
+
+8. Build EXE (includes Silero + ffmpeg)
+---------------------------------------
+pyinstaller --onefile --collect-all silero_vad --add-binary "ffmpeg.exe;." main.py
+
+9. Run built program (confirm works)
+--------------------
+.\dist\main.exe
+
+10. Rebuild clean (only if needed)
+-----------------------------
+deactivate
+rmdir /s /q build, dist, venv
+python -m venv venv
+.\venv\Scripts\activate
+pip install torch silero-vad pyinstaller numpy
+pyinstaller --onefile --collect-all silero_vad --add-binary "ffmpeg.exe;." main.py
+
+Outputs
+-------
+- Final EXE → .\dist\main.exe (run this)
+- Temporary build files → .\build\
+- Virtual environment → .\venv\
