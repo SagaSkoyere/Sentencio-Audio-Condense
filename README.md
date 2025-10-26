@@ -5,12 +5,13 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Desig
 ---
 
 ## Features
+- :slightly smiling face: Easy to use! Install and user-workflow for each folder for creation takes less than a minute.
 - :brain: **Neural voice detection** (via Silero VAD) for highly accurate accurate speech vs. non-speech identification.
 - :scissors: Trims down to **only speech** plus a brief buffer on either side of detected speech to preserve natural sentence flow and dialogue pacing.
-- :headphones: Autmatically compresses for smaller storage, and makes audio adjustments for easier listening (minor dynamic range compression to make shows or lectures easier to purely listen to)
 - :open_file_folder: **Bulk process entire folders** of audio/video files at once with a single command.
-- :arrows_counterclockwise: Extracts audio from common formats (`.wav`, `.mp3`, `.mp4`, `.m4a`, `.mov`, `.mkv`, etc.) via `ffmpeg`.  
-- :computer: Works fully offline — no internet connection, API keys, or fiddling with lining up subtitle tracks. Will always be free to use and open-source.
+- :arrows_counterclockwise: Extracts audio from common formats (`.wav`, `.mp3`, `.mp4`, `.m4a`, `.mov`, `.mkv`, etc.) via `ffmpeg`.
+- :headphones: Autmatically compresses for smaller storage, and makes audio adjustments for easier listening (minor dynamic range compression to make shows or lectures easier to purely listen to) 
+- :computer: Works fully offline — no internet connection or API keys rquired. Will always be free to use and open-source.
 
 ---
 
