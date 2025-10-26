@@ -5,7 +5,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Desig
 ---
 
 ## Features
-- :hundred_points: Easy to use! Install and user-workflow for each folder for creation takes less than a minute.
+- :hourglass: Quick & easy to use! Install and the user-workflow for creation takes less than a minute.
 - :brain: **Neural voice detection** (via Silero VAD) for highly accurate accurate speech vs. non-speech identification.
 - :scissors: Trims down to **only speech** plus a brief buffer on either side of detected speech to preserve natural sentence flow and dialogue pacing.
 - :open_file_folder: **Bulk process entire folders** of audio/video files at once with a single command.
