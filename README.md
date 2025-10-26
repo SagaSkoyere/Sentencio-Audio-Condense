@@ -10,7 +10,7 @@ A simple tool to **trim audio/video files down to just the spoken parts**. Desig
 - :scissors: Trims down to **only speech** plus a brief buffer on either side of detected speech to preserve natural sentence flow and dialogue pacing.
 - :open_file_folder: **Bulk process entire folders** of audio/video files at once with a single command.
 - :arrows_counterclockwise: Extracts audio from common formats (`.wav`, `.mp3`, `.mp4`, `.m4a`, `.mov`, `.mkv`, etc.) via `ffmpeg`.
-- :headphones: Autmatically compresses for smaller storage, and makes audio adjustments for easier listening (minor dynamic range compression to make shows or lectures easier to purely listen to) 
+- :headphones: Makes audio adjustments for easier listening (minor dynamic range compression to make shows or lectures easier to purely listen to). 
 - :computer: Works fully offline — no internet connection or API keys rquired. Will always be free to use and open-source.
 
 ---
